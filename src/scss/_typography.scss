@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+$font-weight-bold: 700;
+$font-weight-semibold: 600;
+$font-weight-extrabold: 800;
+
+%font-sans {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%font-sans-bold {
+  @extend %font-sans;
+
+  font-weight: $font-weight-bold;
+}
+
+%font-sans-semibold {
+  @extend %font-sans;
+
+  font-weight: $font-weight-semibold;
+}
+
+%font-sans-extrabold {
+  @extend %font-sans;
+
+  font-weight: $font-weight-extrabold;
+}
+
+// Sans Serif Styles
+%heading-1-sans {
+  @extend %font-sans-bold;
+
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.4px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -1px;
+  }
+}
+
+%heading-2-sans {
+  @extend %font-sans-bold;
+
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.3px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -0.7px;
+  }
+}
+
+%heading-3-sans {
+  @extend %font-sans-bold;
+
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+  }
+}
+
+%heading-4-sans {
+  @extend %font-sans-bold;
+
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.3px;
+  }
+}
+
+%heading-5-sans {
+  @extend %font-sans-bold;
+
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+}
+
+%heading-6-sans {
+  @extend %font-sans-bold;
+
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+  }
+}
+
+%body-sans {
+  @extend %font-sans;
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+}

@@ -1,21 +1,9 @@
+@import "./scss/index";
+
 * {
+  @extend %font-sans;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-body {
-  height: 100vh;
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 64px;
-  color: white;
 }

@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react"
 
-const App = (): ReactElement => {
-  const x = 10
+import Welcome from "./Welcome/Welcome"
 
-  return <h1>Hello There! {x}</h1>
+const App = (): ReactElement => {
+  return <Welcome />
 }
 
 export default App

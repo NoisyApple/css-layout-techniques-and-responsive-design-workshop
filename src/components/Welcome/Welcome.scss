@@ -1,0 +1,17 @@
+@import "../../scss/index";
+
+.welcome {
+  $background-color: $color-dark-gray;
+  $title-color: $color-light-gray;
+
+  height: 100vh;
+  background-color: $background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    @extend %heading-1-sans;
+    color: $title-color;
+  }
+}

@@ -6,6 +6,9 @@ import Common from "./webpack.common.config"
 
 const config: Configuration = merge(Common, {
   mode: "development",
+  output: {
+    publicPath: "/",
+  },
   devtool: "inline-source-map",
   devServer: {
     port: 4040,
