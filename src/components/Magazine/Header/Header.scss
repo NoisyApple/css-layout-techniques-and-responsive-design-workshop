@@ -1,0 +1,60 @@
+@import "../../../scss/index";
+
+.header {
+  $header-color: rgba($color-white, 0.35);
+  $page-title-color: darken($amethyst, 10);
+  $anchor-color: $amethyst;
+  $anchor-hover-color: lighten($amethyst, 10);
+  $sign-in-button-background-color: $amethyst;
+  $sign-in-button-hover-background-color: lighten($amethyst, 10);
+
+  &__container {
+    background-color: $header-color;
+    padding: space(1);
+    border-radius: 20px;
+    margin: space(3) space(5);
+
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE ]===
+
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE ]===
+  }
+
+  &__page-title {
+    @extend %heading-3-sans;
+
+    font-weight: $font-weight-extrabold;
+    color: $page-title-color;
+    margin-left: space(2);
+  }
+
+  &__anchor {
+    @extend %heading-6-sans;
+
+    color: $anchor-color;
+    margin-right: space(3);
+    text-decoration: none;
+    transition: color 0.25s;
+
+    &:hover {
+      color: $anchor-hover-color;
+    }
+  }
+
+  &__sign-in-button {
+    @extend %heading-6-sans;
+
+    transition: background-color 0.25s, border-color 0.25s;
+    background-color: $sign-in-button-background-color;
+    padding: space(1) space(2);
+
+    &:hover {
+      background-color: $sign-in-button-hover-background-color;
+      border-color: $sign-in-button-hover-background-color;
+    }
+  }
+}
