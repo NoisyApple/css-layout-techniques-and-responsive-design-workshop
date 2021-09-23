@@ -1,0 +1,47 @@
+@import "../../../scss/index";
+
+.search-bar {
+  $search-bar-border-color: $color-medium-light-gray;
+  $search-bar-focus-border-color: $amethyst;
+  $search-bar-button-color: $color-white;
+  $search-bar-button-focus-color: $color-white;
+  $search-bar-button-background-color: $color-medium-light-gray;
+  $search-bar-button-focus-background-color: $amethyst;
+  $search-bar-button-border-color: $color-medium-light-gray;
+  $search-bar-button-focus-border-color: $amethyst;
+
+  &__input {
+    @extend %body-sans;
+
+    padding: space(1) space(2);
+    border-radius: 10px;
+    border: 3px solid $search-bar-border-color;
+    outline: none;
+    transition: border-color 0.25s;
+    margin-right: space(1);
+
+    &:focus {
+      border-color: $search-bar-focus-border-color;
+    }
+  }
+
+  &__button {
+    @extend %body-sans;
+
+    background-color: $search-bar-button-background-color;
+    color: $search-bar-button-color;
+    border-color: $search-bar-button-border-color;
+    padding: space(1) space(1) * 1.2;
+    transition: border-color 0.25s, background-color 0.25s;
+
+    &:focus {
+      background-color: $search-bar-button-focus-background-color;
+      border-color: $search-bar-button-focus-border-color;
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: $search-bar-button-focus-background-color;
+    border-color: $search-bar-button-focus-border-color;
+  }
+}
