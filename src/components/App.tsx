@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react"
 
-import Welcome from "./Welcome/Welcome"
+import Magazine from "./Magazine/Magazine"
 
 const App = (): ReactElement => {
-  return <Welcome />
+  return <Magazine />
 }
 
 export default App
