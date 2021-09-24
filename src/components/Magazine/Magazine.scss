@@ -6,15 +6,13 @@
   }
 
   &__spacer {
-    height: space(7);
-
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
 
-    // height: space(8) * 2;
+    height: space(8) * 2;
 
-    // @media only screen and (min-width: 1200px) {
-    //   height: space(7);
-    // }
+    @media only screen and (min-width: 1200px) {
+      height: space(7);
+    }
 
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
   }
@@ -24,19 +22,18 @@
 
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
 
-    // margin: space(3) space(4);
+    margin: space(3) space(4);
 
-    // @media only screen and (min-width: 1200px) {
-    //   margin: space(3) space(7);
-    // }
+    @media only screen and (min-width: 1200px) {
+      margin: space(3) space(7);
+    }
 
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
 
     // ===[GRID LAYOUT PROPERTIES GOES HERE]===
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: space(2);
 
     // ===[GRID LAYOUT PROPERTIES GOES HERE]===

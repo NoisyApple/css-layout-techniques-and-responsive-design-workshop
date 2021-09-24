@@ -26,7 +26,7 @@
     // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
 
     display: flex;
-    // flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
@@ -34,12 +34,12 @@
 
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
 
-    // margin: 0 space(2);
+    margin: 0 space(2);
 
-    // @media only screen and (min-width: 1200px) {
-    //   flex-direction: row;
-    //   margin: 0 space(5);
-    // }
+    @media only screen and (min-width: 1200px) {
+      flex-direction: row;
+      margin: 0 space(5);
+    }
 
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
   }
@@ -50,16 +50,14 @@
     font-weight: $font-weight-extrabold;
     color: $page-title-color;
 
-    margin-left: space(2);
-
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
 
-    // margin-bottom: space(2);
+    margin-bottom: space(2);
 
-    // @media only screen and (min-width: 1200px) {
-    //   margin-bottom: 0;
-    //   margin-left: space(2);
-    // }
+    @media only screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-left: space(2);
+    }
 
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
   }
@@ -67,11 +65,11 @@
   &__nav-anchors-container {
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
 
-    // margin-top: space(2);
+    margin-top: space(2);
 
-    // @media only screen and (min-width: 1200px) {
-    //   margin-top: 0;
-    // }
+    @media only screen and (min-width: 1200px) {
+      margin-top: 0;
+    }
 
     // ===[RESPONSIVE DESIGN PROPERTIES GOES HERE]===
   }

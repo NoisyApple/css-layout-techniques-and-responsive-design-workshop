@@ -4,10 +4,14 @@ import React, { ReactElement } from "react"
 
 import Header from "./Header/Header"
 import Article from "./Article/Article"
+import HelpButton from "./HelpButton/HelpButton"
+import useFeatureFlag from "../../hooks/useFeatureFlag"
 
 const ARTICLE_AMOUNT = 30
 
 const Magazine = (): ReactElement => {
+  const isHelpButtonFFOn = useFeatureFlag("show-help-button")
+
   return (
     <div className="magazine">
       <section className="magazine__header-section">
@@ -19,6 +23,7 @@ const Magazine = (): ReactElement => {
           return <Article key={e} />
         })}
       </section>
+      {isHelpButtonFFOn && <HelpButton />}
     </div>
   )
 }
