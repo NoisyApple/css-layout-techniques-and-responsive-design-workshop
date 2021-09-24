@@ -1,0 +1,18 @@
+@import "../../../scss/index";
+
+.help-button {
+  @extend %heading-4-sans;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 50px;
+  padding: space(1) space(2);
+  margin: space(2);
+
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
