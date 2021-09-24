@@ -1,0 +1,13 @@
+@import "../../../../scss/index";
+
+.pill-tag {
+  $background-color: rgba($color-black, 0.1);
+
+  @extend %body-sans;
+
+  background-color: $background-color;
+  border-radius: 50px;
+  padding: 0 space(1);
+  margin-right: space(1);
+  margin-top: space(1);
+}

@@ -1,4 +1,19 @@
 @import "../../scss/index";
 
 .magazine {
+  &__header-section {
+    margin-bottom: space(3);
+  }
+
+  &__spacer {
+    height: space(7);
+  }
+
+  &__content-section {
+    margin: space(3) space(7);
+
+    // ===[GRID LAYOUT PROPERTIES GOES HERE]===
+
+    // ===[GRID LAYOUT PROPERTIES GOES HERE]===
+  }
 }

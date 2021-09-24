@@ -8,20 +8,28 @@
   $sign-in-button-background-color: $amethyst;
   $sign-in-button-hover-background-color: lighten($amethyst, 10);
 
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
   &__container {
     background-color: $header-color;
     padding: space(1);
     border-radius: 20px;
-    margin: space(3) space(5);
+    margin: 0 space(5);
 
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10.5px);
     -webkit-backdrop-filter: blur(10.5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
 
-    // ===[FLEX LAYOUT PROPERTIES GOES HERE ]===
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
 
-    // ===[FLEX LAYOUT PROPERTIES GOES HERE ]===
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
   }
 
   &__page-title {
