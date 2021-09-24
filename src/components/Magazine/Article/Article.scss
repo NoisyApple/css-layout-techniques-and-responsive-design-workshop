@@ -3,8 +3,6 @@
 .article {
   $publication-date-color: $color-medium-gray;
 
-  grid-column: span 4 / auto;
-
   &__container {
     border-radius: 20px;
     padding: space(2);
