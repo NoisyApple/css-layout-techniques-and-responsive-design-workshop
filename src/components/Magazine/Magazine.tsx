@@ -4,6 +4,7 @@ import React, { ReactElement } from "react"
 
 import Header from "./Header/Header"
 import Article from "./Article/Article"
+import HelpButton from "./HelpButton/HelpButton"
 
 const ARTICLE_AMOUNT = 30
 
@@ -19,6 +20,7 @@ const Magazine = (): ReactElement => {
           return <Article key={e} />
         })}
       </section>
+      <HelpButton />
     </div>
   )
 }
