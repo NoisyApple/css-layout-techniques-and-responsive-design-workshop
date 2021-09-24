@@ -15,6 +15,10 @@
 
     // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
     // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
 
     &:hover {
@@ -26,6 +30,10 @@
     margin-bottom: space(1);
 
     // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
   }
@@ -43,6 +51,8 @@
   &__content {
     // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
 
+    flex: 1;
+
     // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
   }
 
@@ -56,6 +66,9 @@
 
   &__tags-container {
     // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+
+    display: flex;
+    flex-wrap: wrap;
 
     // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
   }
