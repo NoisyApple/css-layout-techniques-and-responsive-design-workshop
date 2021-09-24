@@ -1,0 +1,62 @@
+@import "../../../scss/index";
+
+.article {
+  $publication-date-color: $color-medium-gray;
+
+  grid-column: span 4 / auto;
+
+  &__container {
+    border-radius: 20px;
+    padding: space(2);
+    transition: opacity 0.25s;
+    cursor: pointer;
+
+    box-shadow: 0 8px 8px 0 rgba(31, 38, 135, 0.37);
+
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__top-section {
+    margin-bottom: space(1);
+
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+  }
+
+  &__publication-date {
+    @extend %body-sans;
+
+    color: $publication-date-color;
+  }
+
+  &__title {
+    text-transform: capitalize;
+  }
+
+  &__content {
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+  }
+
+  &__description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    margin-bottom: space(1);
+  }
+
+  &__tags-container {
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+
+    // ===[FLEX LAYOUT PROPERTIES GOES HERE]===
+  }
+}
